@@ -20,4 +20,9 @@ npm run dev
 
 ## Methods
 
-Open swagger in your browser http://127.0.0.1:3050/api after `npm run dev`
+Open swagger in your browser http://127.0.0.1:3050/api for playground & docs after `npm run dev`
+
+| Method          | Description       |
+| --------------- | ----------------- |
+| POST /batch     | resolve ip list   |
+| POST /companies | `companies` table |
