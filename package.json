@@ -1,0 +1,63 @@
+{
+  "name": "m-geoip",
+  "version": "0.0.1",
+  "description": "geoip microservice",
+  "author": "https://github.com/qqmee",
+  "private": true,
+  "license": "gpl-3.0",
+  "engines": {
+    "node": ">=18.13.0"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "prebuild": "rimraf dist",
+    "build": "nest build",
+    "start": "nest start",
+    "dev": "nest start --watch",
+    "format": "prettier \"src/**/*.ts\" --write",
+    "lint": "eslint \"src/**/*.ts\" --fix"
+  },
+  "lint-staged": {
+    "**/*.{js,ts}": [
+      "npm run format",
+      "npm run lint"
+    ]
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.2.6",
+    "@nestjs/core": "^10.2.6",
+    "@nestjs/platform-fastify": "^10.2.6",
+    "@nestjs/schedule": "^3.0.4",
+    "@nestjs/swagger": "^7.1.12",
+    "@nestjs/typeorm": "^10.0.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
+    "date-fns": "^2.29.1",
+    "mysql2": "^3.6.1",
+    "netmask": "^2.0.2",
+    "node-ipinfo": "^3.3.0",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^3.0.2",
+    "rxjs": "^7.8.1",
+    "typeorm": "^0.3.17",
+    "znv": "^0.4.0"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^10.1.18",
+    "@nestjs/schematics": "^10.0.2",
+    "@types/netmask": "^2.0.3",
+    "@types/node": "^20.7.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "husky": "^8.0.0",
+    "prettier": "^3.0.3",
+    "source-map-support": "^0.5.21",
+    "ts-loader": "^9.4.4",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.2.2"
+  }
+}
